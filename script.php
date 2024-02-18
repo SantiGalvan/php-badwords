@@ -30,7 +30,7 @@ $text_censored = str_replace($censored, '***', $text);
                     <p><?= strlen($text) ?></p>
                 </div>
                 <div class="form-censored">
-                    <h4>Testo da censurare</h4>
+                    <h5>Testo da censurare</h5>
                     <p><?= $censored ?></p>
                 </div>
                 <div class="text-censored">
