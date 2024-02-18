@@ -1,7 +1,6 @@
 <?php
 
 $text = $_GET['text'];
-
-echo $text;
+$censored = $_GET['censored'];
 
 ?>
