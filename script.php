@@ -2,6 +2,7 @@
 
 $text = trim($_GET['text']);
 $censored = trim($_GET['censored']);
+$text_censored = str_replace($censored, '***', $text);
 
 ?>
 
@@ -34,9 +35,7 @@ $censored = trim($_GET['censored']);
                 </div>
                 <div class="text-censored">
                     <h3>Testo censurato</h3>
-                    <p><?php $text_censored = str_replace($censored, '***', $text);
-                    echo $text_censored;
-                    ?></p>
+                    <p><?= $text_censored ?></p>
                     <p><?= strlen($text_censored) ?></p>
                 </div>
             </div>
