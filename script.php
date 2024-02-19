@@ -1,7 +1,7 @@
 <?php
 
-$text = trim($_GET['text']);
-$censored = trim($_GET['censored']);
+$text = trim($_GET['text']) ?? '';
+$censored = trim($_GET['censored']) ?? '';
 $text_censored = str_replace($censored, '***', $text);
 
 ?>
